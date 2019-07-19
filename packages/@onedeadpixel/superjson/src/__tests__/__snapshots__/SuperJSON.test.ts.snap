@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuperJSON #constructor should allow for custom keys 1`] = `"{\\"__sj_type\\":\\"Date\\",\\"__sj_value\\":\\"1902-06-24T00:00:00.000Z\\"}"`;
+
+exports[`SuperJSON #getTransformer should throw error on unregistered type 1`] = `"Map is not registered"`;
+
+exports[`SuperJSON #register should be able to override name 1`] = `"{\\"__sj_type\\":\\"TesterAnimal\\",\\"__sj_value\\":{\\"name\\":\\"bullseye\\"}}"`;
+
+exports[`SuperJSON #register should be able to override toJSONValue and fromJSONValue 1`] = `"{\\"__sj_type\\":\\"TestAnimal\\",\\"__sj_value\\":{\\"betterName\\":\\"bullseye\\"}}"`;
+
+exports[`SuperJSON #register should be able to use an instance 1`] = `"{\\"__sj_type\\":\\"TestAnimal\\",\\"__sj_value\\":{\\"name\\":\\"bullseye\\"}}"`;
+
+exports[`SuperJSON #register should require a fromJSONValue 1`] = `"fromJSONValue must be provided by options or class"`;
+
+exports[`SuperJSON #register should require a name 1`] = `"name must be provided by options or class"`;
+
+exports[`SuperJSON #register should require a toJSONValue 1`] = `"toJSONValue must be provided by options or class"`;
+
+exports[`SuperJSON #stringify should stringify a SuperJSON object 1`] = `"{\\"test\\":{\\"__sj_type\\":\\"Date\\",\\"__sj_value\\":\\"1902-06-24T00:00:00.000Z\\"}}"`;
+
+exports[`SuperJSON #stringify should stringify regular object 1`] = `"{\\"test\\":true}"`;
+
+exports[`SuperJSON #stringify should support custom replacer 1`] = `"{\\"testOne\\":{\\"__sj_type\\":\\"Date\\",\\"__sj_value\\":\\"1902-06-24T00:00:00.000Z\\"}}"`;
+
+exports[`SuperJSON #unregister should throw error for unregistered type 1`] = `"Map is not registered"`;
+
+exports[`SuperJSON #unregister should unregister by class 1`] = `"{}"`;
+
+exports[`SuperJSON #unregister should unregister by name 1`] = `"{}"`;
+
+exports[`SuperJSON .replacer should be usable standalone 1`] = `"{\\"test\\":{\\"__sj_type\\":\\"Date\\",\\"__sj_value\\":\\"1902-06-24T00:00:00.000Z\\"}}"`;

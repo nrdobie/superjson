@@ -1,0 +1,69 @@
+{
+  "name": "@onedeadpixel/superjson",
+  "description": "JSON serializer with support for custom Classes and JavaScript built-in objects.",
+  "version": "0.0.0",
+  "author": "Nicholas Dobie <Nicholas.Dobie@Target.com>",
+  "license": "MIT",
+  "repository": "https://github.com/target/superjson",
+  "private": true,
+  "workspaces": [
+    "packages/@onedeadpixel/*"
+  ],
+  "scripts": {
+    "preinstall": "npx use-yarn",
+    "build": "lerna run --concurrency 1 build",
+    "start": "lerna run --parallel start",
+    "test": "lerna run --concurrency 1 test",
+    "docs": "chokidar \"packages/@onedeadpixel/*/src/**/*.ts\" --debounce 1000 --initial --command \"typedoc packages/@onedeadpixel/*/src/index.ts\"",
+    "ci:build": "lerna run --concurrency 1 ci:build",
+    "ci:docs": "scripts/docs",
+    "ci:prerelease": "lerna version prerelease --amend --no-git-tag-version --yes",
+    "ci:test": "lerna run ci:test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.ts": [
+        "tslint --fix",
+        "git add"
+      ],
+      "{*.json,.{babelrc,eslintrc,prettierrc,stylelintrc}}": [
+        "prettier --parser json --write",
+        "git add"
+      ],
+      "*.{yml,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/CHANGELOG.md",
+      "**/package.json"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.4",
+    "chokidar-cli": "^1.2.2",
+    "envinfo": "^7.3.1",
+    "gh-pages": "^2.0.1",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "jest-extended": "^0.11.1",
+    "lerna": "^3.11.0",
+    "lint-staged": "^8.1.0",
+    "opn-cli": "^4.0.0",
+    "prettier": "^1.16.1",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-external-module-name": "^2.0.0",
+    "typescript": "^3.5.1",
+    "use-yarn": "^2.2.0"
+  }
+}

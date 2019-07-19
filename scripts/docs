@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# I have no idea why but TypeDoc won't link properly unless the build files are removed.
+rm -rf packages/@onedeadpixel/*/{common,module,types}
+
+yarn typedoc packages/@onedeadpixel/*/src/index.ts
+
+yarn gh-pages --dotfiles -d docs

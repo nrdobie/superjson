@@ -1,0 +1,15 @@
+{
+  "name": "@onedeadpixel/envinfo",
+  "version": "0.0.0",
+  "description": "A custom envinfo for Target projects",
+  "author": "Nicholas Dobie <Nicholas.Dobie@Target.com>",
+  "license": "MIT",
+  "bin": {
+    "tgt-envinfo": "./cli.js"
+  },
+  "private": false,
+  "dependencies": {
+    "clipboardy": "^2.0.0",
+    "envinfo": "^7.3.1"
+  }
+}

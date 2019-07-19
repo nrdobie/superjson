@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SJSON should hand complex data 1`] = `
+"{
+  \\"name\\": \\"Target\\",
+  \\"founded\\": {
+    \\"__sj_type\\": \\"Date\\",
+    \\"__sj_value\\": \\"1902-06-24T00:00:00.000Z\\"
+  },
+  \\"previousNames\\": {
+    \\"__sj_type\\": \\"Set\\",
+    \\"__sj_value\\": [
+      \\"Goodfellow Dry Goods\\",
+      \\"Dayton's Dry Goods Company\\",
+      \\"Dayton Company\\",
+      \\"Dayton Corporation\\",
+      \\"Dayton-Hudson Corporation\\"
+    ]
+  },
+  \\"keyPeople\\": {
+    \\"__sj_type\\": \\"Map\\",
+    \\"__sj_value\\": [
+      [
+        \\"CEO\\",
+        \\"Brian Cornell\\"
+      ],
+      [
+        \\"CFO\\",
+        \\"Cathy Smith\\"
+      ],
+      [
+        \\"CTO\\",
+        \\"Mike McNamara\\"
+      ]
+    ]
+  },
+  \\"stores\\": {
+    \\"__sj_type\\": \\"Map\\",
+    \\"__sj_value\\": [
+      [
+        \\"AL\\",
+        {
+          \\"__sj_type\\": \\"Set\\",
+          \\"__sj_value\\": [
+            \\"T9999\\",
+            \\"T9998\\",
+            \\"T9997\\"
+          ]
+        }
+      ],
+      [
+        \\"IA\\",
+        {
+          \\"__sj_type\\": \\"Set\\",
+          \\"__sj_value\\": [
+            \\"T8999\\",
+            \\"T8998\\",
+            \\"T8997\\"
+          ]
+        }
+      ],
+      [
+        \\"MN\\",
+        {
+          \\"__sj_type\\": \\"Set\\",
+          \\"__sj_value\\": [
+            \\"T7999\\",
+            \\"T7998\\",
+            \\"T7997\\"
+          ]
+        }
+      ]
+    ]
+  }
+}"
+`;
