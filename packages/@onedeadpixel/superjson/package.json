@@ -1,7 +1,7 @@
 {
   "name": "@onedeadpixel/superjson",
   "description": "JSON serializer with support for custom Classes and JavaScript built-in objects.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Nicholas Dobie <Nicholas.Dobie@Target.com>",
   "repository": "https://github.com/target/superjson",
   "license": "MIT",
