@@ -24,6 +24,7 @@ aliases:
 jobs:
   setup:
     docker: *docker
+
     steps:
       - checkout
       - *restore_yarn_cache
@@ -38,6 +39,9 @@ jobs:
     docker: *docker
 
     steps:
+      - checkout
+      - *restore_yarn_cache
+      - *yarn_install
       # run tests!
       - run:
           name: Run Jest tests
