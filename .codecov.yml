@@ -1,0 +1,12 @@
+coverage:
+  status:
+    project:
+      default: off
+      '@onedeadpixel/superjson':
+        target: 100%
+        flags: '@onedeadpixel/superjson'
+
+flags:
+  '@onedeadpixel/superjson':
+    paths:
+      - packages/@onedeadpixel/superjson
