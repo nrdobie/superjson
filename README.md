@@ -4,9 +4,10 @@
 
 [![Travis (.org)](https://img.shields.io/travis/nrdobie/superjson.svg?style=for-the-badge)](https://travis-ci.org/nrdobie/superjson)
 [![Codecov](https://img.shields.io/codecov/c/gh/nrdobie/superjson.svg?style=for-the-badge)](https://codecov.io/gh/nrdobie/superjson)
-[![npm (scoped)](https://img.shields.io/npm/v/@onedeadpixel/superjson.svg?style=for-the-badge)](https://www.npmjs.com/package/@onedeadpixel/superjson)
-[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@onedeadpixel/superjson.svg?label=minified&style=for-the-badge)](https://bundlephobia.com/result?p=@onedeadpixel/superjson)
-[![npm (scoped)](https://img.shields.io/npm/l/@onedeadpixel/superjson.svg?style=for-the-badge)](https://www.npmjs.com/package/@onedeadpixel/superjson)
+[![npm version](https://img.shields.io/npm/v/@onedeadpixel/superjson.svg?style=for-the-badge)](https://www.npmjs.com/package/@onedeadpixel/superjson)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@onedeadpixel/superjson.svg?label=minified&style=for-the-badge)](https://bundlephobia.com/result?p=@onedeadpixel/superjson)
+[![npm downloads](https://img.shields.io/npm/dw/@onedeadpixel/superjson.svg?style=for-the-badge)](https://www.npmjs.com/package/@onedeadpixel/superjson)
+[![npm license](https://img.shields.io/npm/l/@onedeadpixel/superjson.svg?style=for-the-badge)](https://www.npmjs.com/package/@onedeadpixel/superjson)
 
 JSON serializer with support for custom Classes and more JavaScript built-in types.
 

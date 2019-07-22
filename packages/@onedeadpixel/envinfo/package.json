@@ -5,7 +5,7 @@
   "author": "Nicholas Dobie <Nicholas.Dobie@Target.com>",
   "license": "MIT",
   "bin": {
-    "tgt-envinfo": "./cli.js"
+    "odp-envinfo": "./cli.js"
   },
   "private": false,
   "dependencies": {
