@@ -2,6 +2,9 @@
   <img alt="SuperJSON" src="./logos/Logo.svg" width="500" />
 </h1>
 
+[![Build Status](https://travis-ci.org/nrdobie/superjson.svg?branch=master)](https://travis-ci.org/nrdobie/superjson)
+[![codecov](https://codecov.io/gh/nrdobie/superjson/branch/master/graph/badge.svg)](https://codecov.io/gh/nrdobie/superjson)
+
 JSON serializer with support for custom Classes and more JavaScript built-in types.
 
 ## Installation
