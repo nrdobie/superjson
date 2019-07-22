@@ -45,7 +45,7 @@ jobs:
       # run tests!
       - run:
           name: Run Jest tests
-          command: yarn test
+          command: yarn ci:test
 
 workflows:
   version: 2
