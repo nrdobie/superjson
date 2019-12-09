@@ -1,0 +1,27 @@
+name: Node CI
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2-beta
+      with:
+        fetch-depth: 0
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: yarn install, build, test
+      run: |
+        yarn install
+        yarn ci:build
+        yarn ci:test
+      env:
+        CI: true
+#     - run: yarn publish
