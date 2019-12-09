@@ -1,4 +1,4 @@
-name: Node CI
+name: Release
 
 on:
   push:
@@ -24,4 +24,6 @@ jobs:
         yarn ci:test
       env:
         CI: true
-#     - run: yarn publish
+    - run: yarn lerna publish --conventional-commits --conventional-graduate --github-release --yes
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
