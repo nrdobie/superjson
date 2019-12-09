@@ -8,6 +8,9 @@
   "main": "common/index.js",
   "module": "module/index.js",
   "types": "types/index.d.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build:common": "tsc --project . --module commonjs --outDir common/ --sourceMap",
     "build:module": "tsc --project . --moduleResolution Node --module es6 --outDir module/ --sourceMap",
