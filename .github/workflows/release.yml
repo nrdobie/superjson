@@ -22,8 +22,10 @@ jobs:
         yarn install
         yarn ci:build
         yarn ci:test
-      env:
-        CI: true
+    - name: Set GitHub info
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
     - run: yarn lerna publish --conventional-commits --conventional-graduate --github-release --yes
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
