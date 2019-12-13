@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`registerTypedArrays adds support for Float32Array 1`] = `"{\\"__sj_type\\":\\"Float32Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Float64Array 1`] = `"{\\"__sj_type\\":\\"Float64Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Int8Array 1`] = `"{\\"__sj_type\\":\\"Int8Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Int16Array 1`] = `"{\\"__sj_type\\":\\"Int16Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Int32Array 1`] = `"{\\"__sj_type\\":\\"Int32Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Uint8Array 1`] = `"{\\"__sj_type\\":\\"Uint8Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Uint8ClampedArray 1`] = `"{\\"__sj_type\\":\\"Uint8ClampedArray\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Uint16Array 1`] = `"{\\"__sj_type\\":\\"Uint16Array\\",\\"__sj_value\\":[1,2,3]}"`;
+
+exports[`registerTypedArrays adds support for Uint32Array 1`] = `"{\\"__sj_type\\":\\"Uint32Array\\",\\"__sj_value\\":[1,2,3]}"`;

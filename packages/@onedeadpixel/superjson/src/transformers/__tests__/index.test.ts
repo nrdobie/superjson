@@ -3,10 +3,12 @@ import { SuperJSON } from '../../SuperJSON'
 import { registerDate } from '../Date'
 import { registerMap } from '../Map'
 import { registerSet } from '../Set'
+import { registerTypedArrays } from '../TypedArray'
 
 jest.mock('../Date')
 jest.mock('../Map')
 jest.mock('../Set')
+jest.mock('../TypedArray')
 
 let sjson: SuperJSON
 
@@ -20,4 +22,5 @@ test('registerAll should register all transformers', () => {
   expect(registerDate).toHaveBeenCalledWith(sjson)
   expect(registerMap).toHaveBeenCalledWith(sjson)
   expect(registerSet).toHaveBeenCalledWith(sjson)
+  expect(registerTypedArrays).toHaveBeenCalledWith(sjson)
 })
