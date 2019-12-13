@@ -87,6 +87,7 @@ These types are supported out of the box by SuperJSON.
 - Date
 - Set
 - Map
+- TypedArray (Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array)
 
 ### Planned Support
 
@@ -95,7 +96,6 @@ While not currently supported these types are planned to be supported in the nea
 - Symbols (#1)
 - Functions (#2)
 - Buffer (#3)
-- Int8Array, Int16Array, Int32Array, Uint8Array, Uint16Array, Uint32Array (#4)
 - [Immutable.js][immutable] (#5)
 
 If you'd like to see other built-in types or data libraries supported, please open an [issue][feature-issue].
