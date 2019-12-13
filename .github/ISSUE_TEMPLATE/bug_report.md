@@ -25,7 +25,7 @@ A clear and concise description of what you expected to happen.
 
 **Environment**
 
-Run `npx @onedeadpixel/envinfo superjson` and paste results here. _(Results are automatically copied to your clipboard when command ran.)_
+Run `npx envinfo --browsers --binaries --npmPackages "@onedeadpixel/superjson,@onedeadpixel/superjson*"` and paste the results here.
 
 **Additional context**
 
