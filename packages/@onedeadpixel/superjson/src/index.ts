@@ -1,5 +1,5 @@
 /**
- * Get default instance using `import SJSON from '@taget/superjson'`
+ * Get default instance using `import SJSON from '@onedeadpixel/superjson'`
  *
  * @module @onedeadpixel/superjson
  * @preferred

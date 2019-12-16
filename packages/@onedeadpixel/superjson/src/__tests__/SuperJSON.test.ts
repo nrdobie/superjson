@@ -25,10 +25,10 @@ describe('SuperJSON', () => {
 
   describe('.reviver', () => {
     it('should be usable standalone', () => {
-      const testString = `{"test": { "__sj_type": "Date", "__sj_value": "1902-06-24T00:00:00Z" } }`
+      const testString = `{"test": { "__sj_type": "Date", "__sj_value": "1995-12-04T00:00:00Z" } }`
 
       expect(JSON.parse(testString, sjson.reviver)).toEqual({
-        test: new Date('1902-06-24T00:00:00Z')
+        test: new Date('1995-12-04T00:00:00Z')
       })
     })
   })
@@ -37,7 +37,7 @@ describe('SuperJSON', () => {
     it('should be usable standalone', () => {
       expect(
         JSON.stringify(
-          { test: new Date('1902-06-24T00:00:00Z') },
+          { test: new Date('1995-12-04T00:00:00Z') },
           sjson.replacer
         )
       ).toMatchSnapshot()
@@ -49,10 +49,10 @@ describe('SuperJSON', () => {
       sjson = new SuperJSON({ typeKey: '__diff_key', valueKey: '__diff_value' })
       registerDate(sjson)
 
-      const str = sjson.stringify(new Date('1902-06-24T00:00:00Z'))
+      const str = sjson.stringify(new Date('1995-12-04T00:00:00Z'))
       expect(str).toMatchSnapshot()
       const parsed = sjson.parse(str)
-      expect(parsed).toEqual(new Date('1902-06-24T00:00:00Z'))
+      expect(parsed).toEqual(new Date('1995-12-04T00:00:00Z'))
     })
   })
 
@@ -64,21 +64,21 @@ describe('SuperJSON', () => {
     })
 
     it('should parse a SuperJSON string', () => {
-      const testString = `{"test": { "__sj_type": "Date", "__sj_value": "1902-06-24T00:00:00Z" } }`
+      const testString = `{"test": { "__sj_type": "Date", "__sj_value": "1995-12-04T00:00:00Z" } }`
 
       expect(sjson.parse(testString)).toEqual({
-        test: new Date('1902-06-24T00:00:00Z')
+        test: new Date('1995-12-04T00:00:00Z')
       })
     })
 
     it('should support custom reviver', () => {
-      const testString = `{"testOne": { "__sj_type": "Date", "__sj_value": "1902-06-24T00:00:00Z" }, "testTwo": true }`
+      const testString = `{"testOne": { "__sj_type": "Date", "__sj_value": "1995-12-04T00:00:00Z" }, "testTwo": true }`
 
       const reviver = (key: any, value: any) =>
         key === 'testTwo' ? undefined : value
 
       expect(sjson.parse(testString, reviver)).toEqual({
-        testOne: new Date('1902-06-24T00:00:00Z')
+        testOne: new Date('1995-12-04T00:00:00Z')
       })
     })
   })
@@ -91,14 +91,14 @@ describe('SuperJSON', () => {
     })
 
     it('should stringify a SuperJSON object', () => {
-      const testObject = { test: new Date('1902-06-24T00:00:00Z') }
+      const testObject = { test: new Date('1995-12-04T00:00:00Z') }
 
       expect(sjson.stringify(testObject)).toMatchSnapshot()
     })
 
     it('should support custom replacer', () => {
       const testString = {
-        testOne: new Date('1902-06-24T00:00:00Z'),
+        testOne: new Date('1995-12-04T00:00:00Z'),
         testTwo: true
       }
 
@@ -112,7 +112,7 @@ describe('SuperJSON', () => {
   describe('#register', () => {
     let testAnimal: TestAnimal
     beforeEach(() => {
-      testAnimal = new TestAnimal('bullseye')
+      testAnimal = new TestAnimal('Odin')
     })
 
     it('should be able to use an instance', () => {
@@ -121,7 +121,7 @@ describe('SuperJSON', () => {
       const str = sjson.stringify(testAnimal)
       expect(str).toMatchSnapshot()
       const parsed = sjson.parse(str)
-      expect(parsed.name).toBe('bullseye')
+      expect(parsed.name).toBe('Odin')
     })
 
     it('should be able to override name', () => {
@@ -130,7 +130,7 @@ describe('SuperJSON', () => {
       const str = sjson.stringify(testAnimal)
       expect(str).toMatchSnapshot()
       const parsed = sjson.parse(str)
-      expect(parsed.name).toBe('bullseye')
+      expect(parsed.name).toBe('Odin')
     })
 
     it('should be able to override toJSONValue and fromJSONValue', () => {
@@ -142,7 +142,7 @@ describe('SuperJSON', () => {
       const str = sjson.stringify(testAnimal)
       expect(str).toMatchSnapshot()
       const parsed = sjson.parse(str)
-      expect(parsed.name).toBe('bullseye')
+      expect(parsed.name).toBe('Odin')
     })
 
     it('should require a name', () => {

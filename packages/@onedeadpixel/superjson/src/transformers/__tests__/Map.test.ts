@@ -10,7 +10,12 @@ beforeEach(() => {
 test('registerMap should add Map support to SJSON', () => {
   registerMap(sjson)
 
-  const map = new Map([[1, 'goodfellow'], [2, 'target']])
+  const map = new Map([
+    [1, 'Mocha'],
+    [2, 'LiveScript'],
+    [3, 'JavaScript'],
+    [4, 'ECMAScript']
+  ])
 
   const str = sjson.stringify(map)
 
