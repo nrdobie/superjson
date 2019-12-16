@@ -10,7 +10,7 @@ beforeEach(() => {
 test('registerSet should add set support to SJSON', () => {
   registerSet(sjson)
 
-  const set = new Set(['goodfellow', 'target'])
+  const set = new Set(['Mocha', 'LiveScript', 'JavaScript', 'ECMAScript'])
 
   const str = sjson.stringify(set)
 

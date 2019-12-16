@@ -10,7 +10,7 @@ beforeEach(() => {
 test('registerDate should add Date support to SJSON', () => {
   registerDate(sjson)
 
-  const date = new Date('1902-06-24T00:00:00Z')
+  const date = new Date('1995-12-04T00:00:00Z')
 
   const str = sjson.stringify(date)
 
