@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`registerMap should add Map support to SJSON 1`] = `"{\\"__sj_type\\":\\"Map\\",\\"__sj_value\\":[[1,\\"goodfellow\\"],[2,\\"target\\"]]}"`;
+exports[`registerMap should add Map support to SJSON 1`] = `"{\\"__sj_type\\":\\"Map\\",\\"__sj_value\\":[[1,\\"Mocha\\"],[2,\\"LiveScript\\"],[3,\\"JavaScript\\"],[4,\\"ECMAScript\\"]]}"`;
